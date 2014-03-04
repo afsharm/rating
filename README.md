@@ -1,5 +1,5 @@
-rating
-======
+rating 1.01
+===========
 
 jquery rating simple &amp; easy
 
@@ -16,9 +16,12 @@ jquery rating simple &amp; easy
         
             <input type="text" class="rating rating10" />
         
-    
+3. You can change size of control by adding classes "rating-size-medium" or "rating-size-small" or "rating-size-normal".
+   If "rating-size-xxx" is not specified it would be interpreted as "rating-size-normal".
 
-3. Fire plugin using jQuery selector
+   <input type="text" class="rating rating10 rating-size-medium" />
+
+4. Fire plugin using jQuery selector
 
         
            $(function ()
@@ -28,7 +31,7 @@ jquery rating simple &amp; easy
         
     
 
-4. When form submit, You can access these values in the server-side script using the $_POST (PHP), Request.Form (Asp or Asp.net).
+5. When form submit, You can access these values in the server-side script using the $_POST (PHP), Request.Form (Asp or Asp.net).
 
-5. view the demo
+6. view the demo
 http://www.chukeer.com/plus/rating/example.html

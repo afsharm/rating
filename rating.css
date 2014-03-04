@@ -4,15 +4,138 @@
 *** ┊  Last Modify 2012-12-01  ┊ ***
 *** └┈┈┈┈┈┈┈┈┈┈┈┈┈┘ ***
 *** ┌┈┈┈┈┈┈┈┈┈┈┈┈┈┐ ***
-*** ┊Version:jquery.rating.1.0 ┊ ***
+*** ┊Version:jquery.rating.1.01┊ ***
 *** └┈┈┈┈┈┈┈┈┈┈┈┈┈┘ ***
 *** ┌┈┈┈┈┈┈┈┈┈┈┈┈┈┐ ***
 *** ┊mahongtao_2000@hotmail.com┊ ***
 *** └┈┈┈┈┈┈┈┈┈┈┈┈┈┘ ***
+*** ┌┈┈┈┈┈┈┈┈┈┈┈┈┈┐ ***
+*** ┊Modified By afsharm       ┊ ***
+*** ┊(Afshar Mohebbi)          ┊ ***
+*** ┊2014-03-04                ┊ ***
+*** ┊http://afsharm.com/       ┊ ***
+*** ┊afshar.mohebbi@gmail.com  ┊ ***
+*** └┈┈┈┈┈┈┈┈┈┈┈┈┈┘ ***
 *************************************/
-.rating { height: 20px; padding:0px; margin:0px; }
-.rating li { list-style: none; float: left; width: 20px; height: 20px; padding:0px; margin:0px;}
-.rating li a { display: block; width: 20px; height: 20px; padding:0px; margin:0px; overflow: hidden; text-indent: -100px; background-image: url(rating.png); background-repeat: no-repeat; text-decoration:none; }
-.rating li a:hover { background-color: transparent; text-decoration: none; }
-.rating li .hover { background-position: 0px -20px; }
-.rating li .full { background-position: 0px -40px; }
+.rating {
+    height: 20px;
+    padding: 0px;
+    margin: 0px;
+}
+
+    .rating li {
+        list-style: none;
+        float: left;
+        width: 20px;
+        height: 20px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+        .rating li a {
+            display: block;
+            width: 20px;
+            height: 20px;
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+            text-indent: -100px;
+            background-image: url(rating.png);
+            background-repeat: no-repeat;
+            text-decoration: none;
+        }
+
+            .rating li a:hover {
+                background-color: transparent;
+                text-decoration: none;
+            }
+
+        .rating li .hover {
+            background-position: 0px -20px;
+        }
+
+        .rating li .full {
+            background-position: 0px -40px;
+        }
+
+.rating-small {
+    height: 10px;
+    padding: 0px;
+    margin: 0px;
+}
+
+    .rating-small li {
+        list-style: none;
+        float: left;
+        width: 10px;
+        height: 10px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+        .rating-small li a {
+            display: block;
+            width: 10px;
+            height: 10px;
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+            text-indent: -50px;
+            background-image: url(rating-small.png);
+            background-repeat: no-repeat;
+            text-decoration: none;
+        }
+
+            .rating-small li a:hover {
+                background-color: transparent;
+                text-decoration: none;
+            }
+
+        .rating-small li .hover {
+            background-position: 0px -10px;
+        }
+
+        .rating-small li .full {
+            background-position: 0px -20px;
+        }
+
+.rating-medium {
+    height: 15px;
+    padding: 0px;
+    margin: 0px;
+}
+
+    .rating-medium li {
+        list-style: none;
+        float: left;
+        width: 15px;
+        height: 15px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+        .rating-medium li a {
+            display: block;
+            width: 15px;
+            height: 15px;
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+            text-indent: -80px;
+            background-image: url(rating-medium.png);
+            background-repeat: no-repeat;
+            text-decoration: none;
+        }
+
+            .rating-medium li a:hover {
+                background-color: transparent;
+                text-decoration: none;
+            }
+
+        .rating-medium li .hover {
+            background-position: 0px -15px;
+        }
+
+        .rating-medium li .full {
+            background-position: 0px -30px;
+        }

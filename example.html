@@ -5,12 +5,11 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>jquery rating example</title>
-    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="rating.js"></script>
     <link rel="stylesheet" type="text/css" href="rating.css" />
     <script type="text/javascript">
-        $(function ()
-        {
+        $(function () {
             $('.rating').rating();
 
             $('.ratingEvent').rating({ rateEnd: function (v) { $('#result').text(v); } });
@@ -18,10 +17,16 @@
     </script>
 </head>
 
-<body style="padding:0px 20px;">
+<body style="padding: 0px 20px;">
     <p><b>Example</b></p>
     Base example<br />
     <input type="text" class="rating rating10" />
+    <br />
+    Sizing<br />
+    <input type="text" class="rating rating10 rating-size-medium" />
+
+    <br />
+    <input type="text" class="rating rating10 rating-size-small" />
 
     <br />
 
@@ -43,7 +48,7 @@
 
     <b>How to use</b>
     <p>1. Include necessary JS and CSS files</p>
-    <pre style="width:700px; background-color:#CCCCCC;">
+    <pre style="width: 700px; background-color: #CCCCCC;">
         <code>
             &lt;script type="text/javascript" src="rating.js"&gt;&lt;/script&gt;
             &lt;link rel="stylesheet" type="text/css" href="rating.css" /&gt;
@@ -51,14 +56,14 @@
     </pre>
 
     <p>2. Create a text box element (the class "rating10" contain a num "10", this will display 10 starts)</p>
-    <pre style="width:700px; background-color:#CCCCCC;">
+    <pre style="width: 700px; background-color: #CCCCCC;">
         <code>
             &lt;input type="text" class="rating rating10" /&gt;
         </code>
     </pre>
 
     <p>3. Fire plugin using jQuery selector</p>
-    <pre style="width:700px; background-color:#CCCCCC;">
+    <pre style="width: 700px; background-color: #CCCCCC;">
         <code>
            $(function ()
             {
@@ -73,10 +78,15 @@
 
     <b>Download</b><br />
     <a href="rating.1.0.zip">rating.1.0.zip</a>
+    <br />
+    <a href="rating.1.01.zip">rating.1.01.zip</a>
 
     <p>&nbsp;</p>
     <b>Contact</b><br />
     mahongtao_2000 [at] hotmail [dot] com
+    <br />
+    <b>Contact</b><br />
+    afshar [.] mohebbi [at] gmail [dot] com
 
     <p>&nbsp;</p>
     <p>&nbsp;</p>
