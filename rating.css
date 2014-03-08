@@ -4,7 +4,7 @@
 *** ┊  Last Modify 2012-12-01  ┊ ***
 *** └┈┈┈┈┈┈┈┈┈┈┈┈┈┘ ***
 *** ┌┈┈┈┈┈┈┈┈┈┈┈┈┈┐ ***
-*** ┊Version:jquery.rating.1.01┊ ***
+*** ┊Version:jquery.rating.1.02┊ ***
 *** └┈┈┈┈┈┈┈┈┈┈┈┈┈┘ ***
 *** ┌┈┈┈┈┈┈┈┈┈┈┈┈┈┐ ***
 *** ┊mahongtao_2000@hotmail.com┊ ***
@@ -174,4 +174,169 @@
 
         .rating-medium li .three-fourth {
             background-position: 0px -165px;
+        }
+
+
+
+.rating-rect-medium {
+    height: 15px;
+    padding: 0px;
+    margin: 0px;
+}
+
+    .rating-rect-medium li {
+        list-style: none;
+        float: left;
+        width: 15px;
+        height: 15px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+        .rating-rect-medium li a {
+            display: block;
+            width: 15px;
+            height: 15px;
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+            text-indent: -80px;
+            background-image: url(rating-rect-medium.png);
+            background-repeat: no-repeat;
+            text-decoration: none;
+        }
+
+            .rating-rect-medium li a:hover {
+                background-color: transparent;
+                text-decoration: none;
+            }
+
+        .rating-rect-medium li .hover {
+            background-position: 0px -15px;
+        }
+
+        .rating-rect-medium li .full {
+            background-position: 0px -30px;
+        }
+
+        .rating-rect-medium li .one-fourth {
+            background-position: 0px -75px;
+        }
+
+        .rating-rect-medium li .two-fourth {
+            background-position: 0px -120px;
+        }
+
+        .rating-rect-medium li .three-fourth {
+            background-position: 0px -165px;
+        }
+
+
+
+
+.rating-rect {
+    height: 20px;
+    padding: 0px;
+    margin: 0px;
+}
+
+    .rating-rect li {
+        list-style: none;
+        float: left;
+        width: 20px;
+        height: 20px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+        .rating-rect li a {
+            display: block;
+            width: 20px;
+            height: 20px;
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+            text-indent: -100px;
+            background-image: url(rating-rect.png);
+            background-repeat: no-repeat;
+            text-decoration: none;
+        }
+
+            .rating-rect li a:hover {
+                background-color: transparent;
+                text-decoration: none;
+            }
+
+        .rating-rect li .hover {
+            background-position: 0px -20px;
+        }
+
+        .rating-rect li .full {
+            background-position: 0px -40px;
+        }
+
+        .rating-rect li .one-fourth {
+            background-position: 0px -100px;
+        }
+
+        .rating-rect li .two-fourth {
+            background-position: 0px -160px;
+        }
+
+        .rating-rect li .three-fourth {
+            background-position: 0px -220px;
+        }
+
+
+.rating-rect-small {
+    height: 10px;
+    padding: 0px;
+    margin: 0px;
+}
+
+    .rating-rect-small li {
+        list-style: none;
+        float: left;
+        width: 10px;
+        height: 10px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+        .rating-rect-small li a {
+            display: block;
+            width: 10px;
+            height: 10px;
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+            text-indent: -50px;
+            background-image: url(rating-rect-small.png);
+            background-repeat: no-repeat;
+            text-decoration: none;
+        }
+
+            .rating-rect-small li a:hover {
+                background-color: transparent;
+                text-decoration: none;
+            }
+
+        .rating-rect-small li .hover {
+            background-position: 0px -10px;
+        }
+
+        .rating-rect-small li .full {
+            background-position: 0px -20px;
+        }
+
+        .rating-rect-small li .one-fourth {
+            background-position: 0px -50px;
+        }
+
+        .rating-rect-small li .two-fourth {
+            background-position: 0px -80px;
+        }
+
+        .rating-rect-small li .three-fourth {
+            background-position: 0px -110px;
         }

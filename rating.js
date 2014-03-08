@@ -4,7 +4,7 @@
 *** ┊  Last Modify 2012-12-01  ┊ ***
 *** └┈┈┈┈┈┈┈┈┈┈┈┈┈┘ ***
 *** ┌┈┈┈┈┈┈┈┈┈┈┈┈┈┐ ***
-*** ┊Version:jquery.rating.1.01┊ ***
+*** ┊Version:jquery.rating.1.02┊ ***
 *** └┈┈┈┈┈┈┈┈┈┈┈┈┈┘ ***
 *** ┌┈┈┈┈┈┈┈┈┈┈┈┈┈┐ ***
 *** ┊mahongtao_2000@hotmail.com┊ ***
@@ -55,10 +55,18 @@
             var e = $(this);
             var c = parseInt(e.attr("class").match(/rating\d+/)[0].replace('rating', ''));
             var m = e.attr("class").match(/rating-size-\w+/);
+            var st = e.attr("class").match(/rating-shape-\w+/);
 
             var rs = "";
             if (m !== null)
                 rs = m[0].replace('rating-size', '');
+
+            var shapeType = "";
+            if (st !== null)
+                shapeType = st[0].replace('rating-shape', '');
+
+            if (shapeType == '-star')
+                shapeType = '';
 
             if (rs == "-normal") {
                 rs = "";
@@ -74,7 +82,7 @@
                 coef = 10;
             }
 
-            var ul = $('<ul class="rating' + rs + '"></ul>').insertAfter(e).width(c * coef + 'px');
+            var ul = $('<ul class="rating' + shapeType + rs + '"></ul>').insertAfter(e).width(c * coef + 'px');
 
             if (c > 0) {
                 for (k = 0; k < c; k++) {
