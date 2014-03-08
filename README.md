@@ -30,7 +30,7 @@ jquery rating simple &amp; easy
 5. You can use different shapes:
    
             
-            <input type="text" class="rating rating10 rating-size-normal" rating-shape-rect value="3"/>
+            <input type="text" class="rating rating10 rating-size-normal rating-shape-rect" value="3"/>
 
 6. Fire plugin using jQuery selector
 
