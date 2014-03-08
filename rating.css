@@ -12,7 +12,7 @@
 *** ┌┈┈┈┈┈┈┈┈┈┈┈┈┈┐ ***
 *** ┊Modified By afsharm       ┊ ***
 *** ┊(Afshar Mohebbi)          ┊ ***
-*** ┊2014-03-04                ┊ ***
+*** ┊2014-03-08                ┊ ***
 *** ┊http://afsharm.com/       ┊ ***
 *** ┊afshar.mohebbi@gmail.com  ┊ ***
 *** └┈┈┈┈┈┈┈┈┈┈┈┈┈┘ ***
@@ -58,6 +58,18 @@
             background-position: 0px -40px;
         }
 
+        .rating li .one-fourth {
+            background-position: 0px -100px;
+        }
+
+        .rating li .two-fourth {
+            background-position: 0px -160px;
+        }
+
+        .rating li .three-fourth {
+            background-position: 0px -220px;
+        }
+
 .rating-small {
     height: 10px;
     padding: 0px;
@@ -99,6 +111,18 @@
             background-position: 0px -20px;
         }
 
+        .rating-small li .one-fourth {
+            background-position: 0px -50px;
+        }
+
+        .rating-small li .two-fourth {
+            background-position: 0px -80px;
+        }
+
+        .rating-small li .three-fourth {
+            background-position: 0px -110px;
+        }
+
 .rating-medium {
     height: 15px;
     padding: 0px;
@@ -138,4 +162,16 @@
 
         .rating-medium li .full {
             background-position: 0px -30px;
+        }
+
+        .rating-medium li .one-fourth {
+            background-position: 0px -75px;
+        }
+
+        .rating-medium li .two-fourth {
+            background-position: 0px -120px;
+        }
+
+        .rating-medium li .three-fourth {
+            background-position: 0px -165px;
         }

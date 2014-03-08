@@ -12,7 +12,7 @@
 *** ┌┈┈┈┈┈┈┈┈┈┈┈┈┈┐ ***
 *** ┊Modified By afsharm       ┊ ***
 *** ┊(Afshar Mohebbi)          ┊ ***
-*** ┊2014-03-04                ┊ ***
+*** ┊2014-03-08                ┊ ***
 *** ┊http://afsharm.com/       ┊ ***
 *** ┊afshar.mohebbi@gmail.com  ┊ ***
 *** └┈┈┈┈┈┈┈┈┈┈┈┈┈┘ ***
@@ -26,11 +26,29 @@
             }, options);
 
         function setRating(e, ul) {
-            var i = parseInt(e.val());
+            var i = parseFloat(e.val());
             if (!i) { i = 0; }
 
             ul.find('a').removeAttr('class');
-            ul.find('a:lt(' + i + ')').attr('class', 'full');
+            var className;
+            var fraction = i % 1;
+            if (fraction < 0 + 0.125) {
+                className = 'zero';
+            } else if (fraction < 0.250 + 0.125) {
+                className = 'one-fourth';
+            }
+            else if (fraction < 0.500 + 0.125) {
+                className = 'two-fourth';
+            } else if (fraction < 0.750 + 0.125) {
+                className = 'three-fourth';
+            } else {
+                className = 'full';
+            }
+
+            ul.find('a:lt(' + Math.floor(i) + ')').attr('class', 'full');
+            if (className != 'zero') {
+                ul.find('a:eq(' + Math.floor(i) + ')').attr('class', className);
+            }
         }
 
         this.each(function () {

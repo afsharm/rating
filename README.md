@@ -21,7 +21,11 @@ jquery rating simple &amp; easy
 
    <input type="text" class="rating rating10 rating-size-medium" />
 
-4. Fire plugin using jQuery selector
+4. You can use floating number as value:
+   
+   <input type="text" class="rating rating10 rating-size-normal" value="3.4/>
+
+5. Fire plugin using jQuery selector
 
         
            $(function ()
@@ -31,7 +35,7 @@ jquery rating simple &amp; easy
         
     
 
-5. When form submit, You can access these values in the server-side script using the $_POST (PHP), Request.Form (Asp or Asp.net).
+6. When form submit, You can access these values in the server-side script using the $_POST (PHP), Request.Form (Asp or Asp.net).
 
-6. view the demo
+7. view the demo
 http://www.chukeer.com/plus/rating/example.html
