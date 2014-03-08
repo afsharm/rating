@@ -19,15 +19,18 @@ jquery rating simple &amp; easy
 3. You can change size of control by adding classes "rating-size-medium" or "rating-size-small" or "rating-size-normal".
    If "rating-size-xxx" is not specified it would be interpreted as "rating-size-normal".
 
-   <input type="text" class="rating rating10 rating-size-medium" />
+               
+            <input type="text" class="rating rating10 rating-size-medium" />
 
 4. You can use floating number as value:
    
-   <input type="text" class="rating rating10 rating-size-normal" value="3.4"/>
+            
+            <input type="text" class="rating rating10 rating-size-normal" value="3.4"/>
 
 5. You can use different shapes:
    
-   <input type="text" class="rating rating10 rating-size-normal" rating-shape-rect value="3"/>
+            
+            <input type="text" class="rating rating10 rating-size-normal" rating-shape-rect value="3"/>
 
 6. Fire plugin using jQuery selector
 
