@@ -4,7 +4,7 @@
 *** ┊  Last Modify 2012-12-01  ┊ ***
 *** └┈┈┈┈┈┈┈┈┈┈┈┈┈┘ ***
 *** ┌┈┈┈┈┈┈┈┈┈┈┈┈┈┐ ***
-*** ┊Version:jquery.rating.1.02┊ ***
+*** ┊Version:jquery.rating.1.03┊ ***
 *** └┈┈┈┈┈┈┈┈┈┈┈┈┈┘ ***
 *** ┌┈┈┈┈┈┈┈┈┈┈┈┈┈┐ ***
 *** ┊mahongtao_2000@hotmail.com┊ ***
@@ -12,7 +12,7 @@
 *** ┌┈┈┈┈┈┈┈┈┈┈┈┈┈┐ ***
 *** ┊Modified By afsharm       ┊ ***
 *** ┊(Afshar Mohebbi)          ┊ ***
-*** ┊2014-03-08                ┊ ***
+*** ┊2014-03-13                ┊ ***
 *** ┊http://afsharm.com/       ┊ ***
 *** ┊afshar.mohebbi@gmail.com  ┊ ***
 *** └┈┈┈┈┈┈┈┈┈┈┈┈┈┘ ***
@@ -339,4 +339,58 @@
 
         .rating-rect-small li .three-fourth {
             background-position: 0px -110px;
+        }
+
+
+.rating-medium-blueviolet {
+    height: 15px;
+    padding: 0px;
+    margin: 0px;
+}
+
+    .rating-medium-blueviolet li {
+        list-style: none;
+        float: left;
+        width: 15px;
+        height: 15px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+        .rating-medium-blueviolet li a {
+            display: block;
+            width: 15px;
+            height: 15px;
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+            text-indent: -80px;
+            background-image: url(rating-medium-blueviolet.png);
+            background-repeat: no-repeat;
+            text-decoration: none;
+        }
+
+            .rating-medium-blueviolet li a:hover {
+                background-color: transparent;
+                text-decoration: none;
+            }
+
+        .rating-medium-blueviolet li .hover {
+            background-position: 0px -15px;
+        }
+
+        .rating-medium-blueviolet li .full {
+            background-position: 0px -30px;
+        }
+
+        .rating-medium-blueviolet li .one-fourth {
+            background-position: 0px -75px;
+        }
+
+        .rating-medium-blueviolet li .two-fourth {
+            background-position: 0px -120px;
+        }
+
+        .rating-medium-blueviolet li .three-fourth {
+            background-position: 0px -165px;
         }

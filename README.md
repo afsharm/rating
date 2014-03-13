@@ -1,4 +1,4 @@
-rating 1.02
+rating 1.03
 ===========
 
 jquery rating simple &amp; easy
@@ -32,7 +32,12 @@ jquery rating simple &amp; easy
             
             <input type="text" class="rating rating10 rating-size-normal rating-shape-rect" value="3"/>
 
-6. Fire plugin using jQuery selector
+6. You can use different colors:
+   
+            
+            <input type="text" class="rating rating10 rating-size-medium rating-shape-star rating-color-blueviolet" value="3"/>
+
+7. Fire plugin using jQuery selector
 
         
            $(function ()
@@ -42,7 +47,7 @@ jquery rating simple &amp; easy
         
     
 
-7. When form submit, You can access these values in the server-side script using the $_POST (PHP), Request.Form (Asp or Asp.net).
+8. When form submit, You can access these values in the server-side script using the $_POST (PHP), Request.Form (Asp or Asp.net).
 
-8. view the demo
+9. view the demo
 http://www.chukeer.com/plus/rating/example.html

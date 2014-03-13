@@ -4,7 +4,7 @@
 *** ┊  Last Modify 2012-12-01  ┊ ***
 *** └┈┈┈┈┈┈┈┈┈┈┈┈┈┘ ***
 *** ┌┈┈┈┈┈┈┈┈┈┈┈┈┈┐ ***
-*** ┊Version:jquery.rating.1.02┊ ***
+*** ┊Version:jquery.rating.1.03┊ ***
 *** └┈┈┈┈┈┈┈┈┈┈┈┈┈┘ ***
 *** ┌┈┈┈┈┈┈┈┈┈┈┈┈┈┐ ***
 *** ┊mahongtao_2000@hotmail.com┊ ***
@@ -12,7 +12,7 @@
 *** ┌┈┈┈┈┈┈┈┈┈┈┈┈┈┐ ***
 *** ┊Modified By afsharm       ┊ ***
 *** ┊(Afshar Mohebbi)          ┊ ***
-*** ┊2014-03-08                ┊ ***
+*** ┊2014-03-13                ┊ ***
 *** ┊http://afsharm.com/       ┊ ***
 *** ┊afshar.mohebbi@gmail.com  ┊ ***
 *** └┈┈┈┈┈┈┈┈┈┈┈┈┈┘ ***
@@ -53,39 +53,47 @@
 
         this.each(function () {
             var e = $(this);
-            var c = parseInt(e.attr("class").match(/rating\d+/)[0].replace('rating', ''));
-            var m = e.attr("class").match(/rating-size-\w+/);
-            var st = e.attr("class").match(/rating-shape-\w+/);
+            var ratingCount = parseInt(e.attr("class").match(/rating\d+/)[0].replace('rating', ''));
+            var sizeLiteral = e.attr("class").match(/rating-size-\w+/);
+            var shapeLiteral = e.attr("class").match(/rating-shape-\w+/);
+            var colorLiteral = e.attr("class").match(/rating-color-\w+/);
 
-            var rs = "";
-            if (m !== null)
-                rs = m[0].replace('rating-size', '');
+            var ratingSize = "";
+            if (sizeLiteral !== null)
+                ratingSize = sizeLiteral[0].replace('rating-size', '');
 
-            var shapeType = "";
-            if (st !== null)
-                shapeType = st[0].replace('rating-shape', '');
+            var ratingShape = "";
+            if (shapeLiteral !== null)
+                ratingShape = shapeLiteral[0].replace('rating-shape', '');
 
-            if (shapeType == '-star')
-                shapeType = '';
+            if (ratingShape == '-star')
+                ratingShape = '';
 
-            if (rs == "-normal") {
-                rs = "";
+            var ratingColor = "";
+            if (colorLiteral !== null)
+                ratingColor = colorLiteral[0].replace('rating-color', '');
+
+            if (ratingColor == '-blue')
+                ratingColor = '';
+
+            if (ratingSize == "-normal") {
+                ratingSize = "";
             }
 
             var coef = 20;
 
-            if (rs == "-medium") {
+            if (ratingSize == "-medium") {
                 coef = 15;
             }
 
-            if (rs == "-small") {
+            if (ratingSize == "-small") {
                 coef = 10;
             }
 
-            var ul = $('<ul class="rating' + shapeType + rs + '"></ul>').insertAfter(e).width(c * coef + 'px');
-
-            if (c > 0) {
-                for (k = 0; k < c; k++) {
+            var ul = $('<ul class="rating' + ratingShape + ratingSize + ratingColor + '"></ul>').insertAfter(e).width(ratingCount * coef + 'px');
+            
+            if (ratingCount > 0) {
+                for (k = 0; k < ratingCount; k++) {
                     ul.append('<li><a href="javascript:void(0);" title="' + (k + 1) + '">' + (k + 1) + '</a></li>')
                 }
             }
@@ -95,7 +103,7 @@
 
                 if (!i) { i = 0; }
 
-                ul.find('a').attr('title', i + ' / ' + c);
+                ul.find('a').attr('title', i + ' / ' + ratingCount);
             }
             else {
                 ul.find('a').each(function (index, link) {
